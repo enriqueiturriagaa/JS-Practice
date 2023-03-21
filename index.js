@@ -1,6 +1,6 @@
 //disable github copilot before practicing!
 
-const arr = [1, 2, 3, 4, 5, 46, 6, 7, 8, 9, 10];
+const arr = [2, 3, 4, 1, 5, 46, 6, 7, 8, 9, 10];
 
 console.log(arr);
 
@@ -47,3 +47,28 @@ const arrMax = arr.reduce(function (max, curr) {
 console.log(arrMax);
 
 //Reduce to the min Value
+//
+const initialVal = arr[0];
+
+const arrMin = arr.reduce(function (min, curr) {
+  if (curr < min) {
+    min = curr;
+  }
+  return min;
+}, initialVal);
+console.log(arrMin);
+
+// SetTimeout(Callback Function, timeout) -> Create a function that prints 1-5 every 1 sec. Usinf a for loop
+
+function print15() {
+  for (let i = 1; i < 5; i++) {
+    function close(x) {
+      setTimeout(function () {
+        console.log(x);
+      }, x * 1000);
+    }
+    close(i);
+  }
+}
+
+print15();
