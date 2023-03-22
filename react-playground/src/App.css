@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+.App {
+  text-align: center;
+  background-color: #e0e5ec;
+  color: rgb(44, 44, 44);
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.counter {
+  margin-bottom: 50px;
+}
+
+
+.btn {
+  background-color: #e0e5ec;
+  /* Base color */
+  border: none;
+  border-radius: 10px;
+  box-shadow:
+    7px 7px 14px #c2c8d2,
+    /* Light shadow */
+    -7px -7px 14px #f1f6ff;
+  /* Dark shadow */
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow:
+    4px 4px 8px #c2c8d2,
+    /* Light shadow */
+    -4px -4px 8px #f1f6ff;
+  /* Dark shadow */
+  transform: translateY(2px);
+  /* Push the button down */
+}
+
+.headShot {
+  background-color: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  box-shadow:
+    -5px -5px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  color: #4d4d4d;
+}
